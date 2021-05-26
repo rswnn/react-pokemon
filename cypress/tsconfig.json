@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "outDir": "./built",
+        "allowJs": true,
+        "target": "es5",
+        "allowUnreachableCode": false,
+        "noImplicitReturns": true,
+        "noImplicitAny": true,
+        "types": ["cypress"],
+    },
+    "include": ["**/*.*"],
+    "exclude": [
+        "./plugins/**/*",
+        "./typings/**/*",
+        "./built/**/*" // This is what fixed it!
+    ]
+}
