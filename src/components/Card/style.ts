@@ -71,6 +71,14 @@ const CardWrapper = styled.div<CardType>`
         right: 10px;
         opacity: 0.8;
     }
+    @media screen and (max-width: 480px)  {
+        ${props => props.isPageMyPokemon && css`
+            justify-content: space-between;
+            img {
+                width: 150px;
+            }
+        `}
+    }
     @media screen and (max-width: 375px)  {
         ${props => props.isPageMyPokemon && css`
             width: 340px;
