@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { size, colors } from 'constant';
 import { images } from 'assets';
+import { css } from '@emotion/react';
 
 type NavStyledProps = {
   isPageDetail?:boolean;
@@ -44,8 +45,9 @@ const StyledBurger = styled.div<StyledBurgerProps>`
   right: 20px;
   z-index: 20;
   display: none;
+
   @media ${size.md} {
-    display: flex;
+    display: ${props => props.open ? 'none' : 'flex'};
     justify-content: space-around;
     flex-flow: column nowrap;
   }

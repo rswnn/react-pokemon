@@ -12,7 +12,7 @@ const Burger = ({
         <LineStyled />
         <LineStyled />
       </StyledBurger>
-      <RightNav open={ open } handleNavigate={ handleNavigate }/>
+      <RightNav open={ open } handleNavigate={ handleNavigate } setOpen={ setOpen }/>
     </>
   );
 };
