@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
-[Demo](https://pokemonkuh-1573890936930.web.app).
+
+[Demo the apps](https://pokemonkuh-1573890936930.web.app).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
